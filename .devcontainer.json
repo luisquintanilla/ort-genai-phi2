@@ -1,0 +1,30 @@
+{
+    "name": "ORT Gen AI GPU Environment",    
+    "image": "mcr.microsoft.com/devcontainers/base:debian",
+    "features": {
+        "ghcr.io/devcontainers/features/python": {
+            "version": "3.10"
+        },
+        "ghcr.io/devcontainers/features/dotnet": {
+            "version": "6.0"
+        },
+        "ghcr.io/devcontainers/features/nvidia-cuda:1": {}
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python"
+            ]
+        }
+    },
+    "postStartCommand": [
+        "pip install -r requirements.txt"
+    ],
+    "runArgs": [
+		"--gpus",
+		"all"        
+    ],
+    "containerEnv": {
+        "HUGGINGFACE_TOKEN": ""
+    }
+}
