@@ -8,8 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.ML.OnnxRuntime.Gpu" Version="1.17.3" />
-    <PackageReference Include="Microsoft.ML.OnnxRuntimeGenAI.Cuda" Version="0.1.0" />
+    <PackageReference Include="Microsoft.ML.OnnxRuntime" Version="1.17.3" />
+    <PackageReference Include="Microsoft.ML.OnnxRuntimeGenAI" Version="0.1.0" />
   </ItemGroup>
 
   <ItemGroup>

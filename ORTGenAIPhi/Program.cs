@@ -2,7 +2,7 @@
 
 Console.WriteLine("Hello From Phi-2");
 
-var modelPath = "phi2-int4-cuda";
+var modelPath = "phi2-int4-cpu";
 
 // Initialize model, tokenizers, and parameters
 using Model model = new Model(modelPath);

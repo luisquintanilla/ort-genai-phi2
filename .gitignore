@@ -456,3 +456,4 @@ $RECYCLE.BIN/
 cache_dir/**
 example-models/**/*
 ORTGenAIPhi/phi2-int4-cuda/*
+ORTGenAIPhi/phi2-int4-cpu/*
