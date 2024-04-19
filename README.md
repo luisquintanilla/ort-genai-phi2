@@ -1,3 +1,11 @@
+## Prerequisites
+
+It's recommended you open this repo using devcontainers. Otherwise, you'll need the following:
+
+- Python 3.10
+- .NET SDK 6.0
+- CUDA
+
 ## Setup
 
 ### Get the model
@@ -28,10 +36,10 @@
     huggingface-cli login --token $HUGGINGFACE_TOKEN
     ```
 
-1. Create a new directory called *phi2-int4-cuda* inside your *ORTGEnAIPhi* directory.
+1. Create a new directory called *phi2-int4-cuda* inside your *ORTGenAIPhi* directory.
 
     ```bash
-    mkdir phi2-int4-cuda
+    mkdir -p ./ORTGenAIPhi/phi2-int4-cuda
     ```
 
 1. Convert the model
